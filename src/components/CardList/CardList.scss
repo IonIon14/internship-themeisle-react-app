@@ -1,0 +1,49 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.modal-background-effect {
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-6 {
+    float: left;
+  }
+}

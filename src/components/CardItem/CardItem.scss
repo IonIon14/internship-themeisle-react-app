@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+@font-face {
+  font-family: Lato;
+  src: url('../../fonts/Lato-Black.ttf');
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  max-width: 460px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  transform: translateY(0);
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in;
+    transform: translateY(-10px);
+
+    &:before {
+      opacity: 1;
+    }
+
+    .card-thumbnail-container {
+      cursor: pointer;
+
+      .learn-more-overlay {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  .card-thumbnail-container {
+    position: relative;
+
+    .learn-more-overlay {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: all .4s ease-in-out;
+      background-color: #000000;
+      border-radius: 5px 5px 0 0;
+
+      h2 {
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .card-body {
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: inherit;
+    display: inline-block;
+
+    p {
+      font-family: Lato, sans-serif;
+      color: lightgray;
+    }
+
+
+    .card-title {
+      margin-top: 20px;
+      padding-left: 20px;
+
+      h2 {
+        font-family: Lato, sans-serif;
+      }
+    }
+  }
+
+}
+
+.my-span {
+  color: lightgray;
+}
+
+.row-span {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.card-text {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.card-text-user {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.card-img {
+  border-radius: 5px 5px 0 0;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+

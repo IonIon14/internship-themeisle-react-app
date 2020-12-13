@@ -1,0 +1,145 @@
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: .3rem;
+  outline: 0;
+  font-family: Lato;
+}
+
+.modal {
+  position: absolute;
+  max-width: 650px;
+  height: 100px;
+  top: 10%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  outline: none;
+}
+
+.fade .show {
+  opacity: 1;
+}
+
+.fade {
+  transition: opacity 1s linear;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+    transform-origin: 50% 50%;
+  }
+
+  50% {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.modal .zoom {
+  animation: scale 1s ease-in-out 1 forwards;
+  animation-delay: 2s;
+}
+
+.modal.fade .modal-dialog:after {
+  transition: transform .5s ease-out;
+}
+
+.modal-header .close {
+  padding: 6px;
+  border-style: none;
+
+}
+
+.close span {
+  font-size: 30px;
+}
+
+.row-span img {
+  height: 50px;
+  border-radius: 30px 30px 30px 30px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 10px;
+}
+
+
+.modal-body .card-text {
+  text-align: left;
+  padding-left: 20px;
+  box-sizing: inherit;
+  display: inline-block;
+}
+
+.modal-body .card-title {
+  margin-top: 20px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: start;
+}
+
+.modal .modal-body .card-img {
+  height: 350px;
+  width: 100%;
+  border-radius: 0;
+
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.modal-footer .row-span .text-muted {
+  color: gray;
+  font-family: Lato;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.modal-footer .text-muted {
+  margin-top: 5px;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  opacity: .5;
+  outline: none;
+}
+
+
+button, select {
+  text-transform: none;
+}
+
+.close:focus, .close:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: .75;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
